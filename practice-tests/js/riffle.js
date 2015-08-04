@@ -118,11 +118,18 @@ var intialShuffled = shuffleCards(cardArray);
 var splitDeckArray = createHalves(intialShuffled);
 var riflledDeck = riffleCards(splitDeckArray);
 
-console.log(riflledDeck);
+// console.log(riflledDeck);
 
-// what's a quick and dirty way to test this?
-if (riflledDeck[2] !==  cardArray[2]) {
-  console.log("Shuffled!");
-} else {
-  console.log("Not Shuffled!");
-}
+// // what's a quick and dirty way to test this?
+// if (riflledDeck[2] !==  cardArray[2]) {
+//   console.log("Shuffled!");
+// } else {
+//   console.log("Not Shuffled!");
+// }
+
+
+module.exports = {
+  shuffleCards: shuffleCards,
+  cardArray: cardArray
+};
+
